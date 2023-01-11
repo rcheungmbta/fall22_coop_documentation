@@ -1,0 +1,1733 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <ISO8601DefaultCalendarPref />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Inventory by Base' inline='true' name='sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8' version='18.1'>
+      <repository-location derived-from='/datasources/InventorybyBase?rev=13.7' id='InventorybyBase' path='/datasources' revision='13.8' />
+      <connection channel='https' class='sqlproxy' dbname='InventorybyBase' directory='/dataserver' port='443' server='awdata.mbta.com' username=''>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <metadata-records>
+          <metadata-record class='measure'>
+            <remote-name>Avg Base Reorder Point</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Base Reorder Point]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Avg Base Reorder Point</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS04 Current Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CS04 Current Status]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CS04 Current Status</remote-alias>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS04 Do Not Replenish Rule</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CS04 Do Not Replenish Rule]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CS04 Do Not Replenish Rule</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CS04 Max Qty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CS04 Max Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CS04 Max Qty</remote-alias>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS04 No Repl Flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CS04 No Repl Flag]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CS04 No Repl Flag</remote-alias>
+            <ordinal>24</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CS04 Reorder Point</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CS04 Reorder Point]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CS04 Reorder Point</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CS04 Reorder Qty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CS04 Reorder Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CS04 Reorder Qty</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Central Store Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Central Store Category]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Central Store Category</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Central Store Reorder Point (Highest)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Central Store Reorder Point (Highest)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Central Store Reorder Point (Highest)</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Central Store Reorder Point (Lowest)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Central Store Reorder Point (Lowest)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Central Store Reorder Point (Lowest)</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Central Store Reorder Point</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Central Store Reorder Point]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Central Store Reorder Point</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>DOH / Lead Time Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DOH / Lead Time Ratio]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>DOH / Lead Time Ratio</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOH Duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DOH Duration]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>DOH Duration</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOH Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DOH Status]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>DOH Status</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Global Days on Hand</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Global Days on Hand]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Global Days on Hand</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IOH - Base Unit Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IOH - Base Unit Count]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Base Unit Count</remote-alias>
+            <ordinal>23</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - Cost Element</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - Cost Element]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Cost Element</remote-alias>
+            <ordinal>46</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - Current Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - Current Status]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Current Status</remote-alias>
+            <ordinal>42</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Family Short Descr-1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Family Short Descr-1]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Family Short Descr-1</remote-alias>
+            <ordinal>53</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Family Short Descr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Family Short Descr]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Family Short Descr</remote-alias>
+            <ordinal>51</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Group Short Descr-1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Group Short Descr-1]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Group Short Descr-1</remote-alias>
+            <ordinal>54</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Group Short Descr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Group Short Descr]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Group Short Descr</remote-alias>
+            <ordinal>52</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Item Family ID-1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Item Family ID-1]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Item Family ID-1</remote-alias>
+            <ordinal>50</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Item Family ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Item Family ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Item Family ID</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Item Family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Item Family]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Item Family</remote-alias>
+            <ordinal>41</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Item Group ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Item Group ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Item Group ID</remote-alias>
+            <ordinal>39</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - FMIS Item Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - FMIS Item Group]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - FMIS Item Group</remote-alias>
+            <ordinal>40</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - Item Descr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - Item Descr]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Item Descr</remote-alias>
+            <ordinal>38</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - Item ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - Item ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Item ID</remote-alias>
+            <ordinal>32</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IOH - LTM Demand Qty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IOH - LTM Demand Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - LTM Demand Qty</remote-alias>
+            <ordinal>35</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IOH - LTM Demand Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IOH - LTM Demand Value]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - LTM Demand Value</remote-alias>
+            <ordinal>37</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IOH - Max Qty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IOH - Max Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Max Qty</remote-alias>
+            <ordinal>45</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - No Repl Flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - No Repl Flag]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - No Repl Flag</remote-alias>
+            <ordinal>47</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IOH - On Hand Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IOH - On Hand Value]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - On Hand Value</remote-alias>
+            <ordinal>34</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IOH - Qty On Hand</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IOH - Qty On Hand]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Qty On Hand</remote-alias>
+            <ordinal>33</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IOH - Reorder Point</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IOH - Reorder Point]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Reorder Point</remote-alias>
+            <ordinal>43</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IOH - Reorder Qty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IOH - Reorder Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Reorder Qty</remote-alias>
+            <ordinal>44</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - Report Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[IOH - Report Date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Report Date</remote-alias>
+            <ordinal>30</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - Unit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - Unit]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Unit</remote-alias>
+            <ordinal>31</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IOH - Utilization Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IOH - Utilization Type]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IOH - Utilization Type</remote-alias>
+            <ordinal>36</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Lead Time (Days)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Lead Time (Days)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Lead Time (Days)</remote-alias>
+            <ordinal>29</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No CS004 Min Set</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[No CS004 Min Set]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>No CS004 Min Set</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Part in a Central Store</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Part in a Central Store]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Part in a Central Store</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Query Date-1</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Query Date-1]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Query Date-1</remote-alias>
+            <ordinal>49</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Query Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Query Date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Query Date</remote-alias>
+            <ordinal>48</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SW Avg Reorder Point</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SW Avg Reorder Point]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SW Avg Reorder Point</remote-alias>
+            <ordinal>25</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SW LTM Demand Qty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SW LTM Demand Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SW LTM Demand Qty</remote-alias>
+            <ordinal>27</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SW LTM Demand Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SW LTM Demand Value]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SW LTM Demand Value</remote-alias>
+            <ordinal>28</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SW Qty OH (Rail+Bus+CS)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SW Qty OH (Rail+Bus+CS)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SW Qty OH (Rail+Bus+CS)</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SW Qty OH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SW Qty OH]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SW Qty OH</remote-alias>
+            <ordinal>26</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SW Value OH (Rail+Bus+CS)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SW Value OH (Rail+Bus+CS)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SW Value OH (Rail+Bus+CS)</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>SW Value OH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SW Value OH]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>SW Value OH</remote-alias>
+            <ordinal>22</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transport Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transport Category]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Transport Category</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transport Class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transport Class]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Transport Class</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transport Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Transport Segment]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Transport Segment</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_IGNORE_HINT_CHECK_NOT_NULL'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource :source-version='18.1' formatted-name='Inventory by Base' inline='true' version='18.1' xml:base='https://awdata.mbta.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location derived-from='/datasources/InventorybyBase?rev=13.7' id='InventorybyBase' path='/datasources' revision='13.8' />
+  <connection channel='https' class='sqlproxy' dbname='InventorybyBase' directory='/dataserver' port='443' server='awdata.mbta.com'>
+    <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <cols>
+      <map key='[Avg Base Reorder Point]' value='[sqlproxy].[Avg Base Reorder Point]' />
+      <map key='[CS04 Current Status]' value='[sqlproxy].[CS04 Current Status]' />
+      <map key='[CS04 Do Not Replenish Rule]' value='[sqlproxy].[CS04 Do Not Replenish Rule]' />
+      <map key='[CS04 Max Qty]' value='[sqlproxy].[CS04 Max Qty]' />
+      <map key='[CS04 No Repl Flag]' value='[sqlproxy].[CS04 No Repl Flag]' />
+      <map key='[CS04 Reorder Point]' value='[sqlproxy].[CS04 Reorder Point]' />
+      <map key='[CS04 Reorder Qty]' value='[sqlproxy].[CS04 Reorder Qty]' />
+      <map key='[Central Store Category]' value='[sqlproxy].[Central Store Category]' />
+      <map key='[Central Store Reorder Point (Highest)]' value='[sqlproxy].[Central Store Reorder Point (Highest)]' />
+      <map key='[Central Store Reorder Point (Lowest)]' value='[sqlproxy].[Central Store Reorder Point (Lowest)]' />
+      <map key='[Central Store Reorder Point]' value='[sqlproxy].[Central Store Reorder Point]' />
+      <map key='[DOH / Lead Time Ratio]' value='[sqlproxy].[DOH / Lead Time Ratio]' />
+      <map key='[DOH Duration]' value='[sqlproxy].[DOH Duration]' />
+      <map key='[DOH Status]' value='[sqlproxy].[DOH Status]' />
+      <map key='[Global Days on Hand]' value='[sqlproxy].[Global Days on Hand]' />
+      <map key='[IOH - Base Unit Count]' value='[sqlproxy].[IOH - Base Unit Count]' />
+      <map key='[IOH - Cost Element]' value='[sqlproxy].[IOH - Cost Element]' />
+      <map key='[IOH - Current Status]' value='[sqlproxy].[IOH - Current Status]' />
+      <map key='[IOH - FMIS Family Short Descr-1]' value='[sqlproxy].[IOH - FMIS Family Short Descr-1]' />
+      <map key='[IOH - FMIS Family Short Descr]' value='[sqlproxy].[IOH - FMIS Family Short Descr]' />
+      <map key='[IOH - FMIS Group Short Descr-1]' value='[sqlproxy].[IOH - FMIS Group Short Descr-1]' />
+      <map key='[IOH - FMIS Group Short Descr]' value='[sqlproxy].[IOH - FMIS Group Short Descr]' />
+      <map key='[IOH - FMIS Item Family ID-1]' value='[sqlproxy].[IOH - FMIS Item Family ID-1]' />
+      <map key='[IOH - FMIS Item Family ID]' value='[sqlproxy].[IOH - FMIS Item Family ID]' />
+      <map key='[IOH - FMIS Item Family]' value='[sqlproxy].[IOH - FMIS Item Family]' />
+      <map key='[IOH - FMIS Item Group ID]' value='[sqlproxy].[IOH - FMIS Item Group ID]' />
+      <map key='[IOH - FMIS Item Group]' value='[sqlproxy].[IOH - FMIS Item Group]' />
+      <map key='[IOH - Item Descr]' value='[sqlproxy].[IOH - Item Descr]' />
+      <map key='[IOH - Item ID]' value='[sqlproxy].[IOH - Item ID]' />
+      <map key='[IOH - LTM Demand Qty]' value='[sqlproxy].[IOH - LTM Demand Qty]' />
+      <map key='[IOH - LTM Demand Value]' value='[sqlproxy].[IOH - LTM Demand Value]' />
+      <map key='[IOH - Max Qty]' value='[sqlproxy].[IOH - Max Qty]' />
+      <map key='[IOH - No Repl Flag]' value='[sqlproxy].[IOH - No Repl Flag]' />
+      <map key='[IOH - On Hand Value]' value='[sqlproxy].[IOH - On Hand Value]' />
+      <map key='[IOH - Qty On Hand]' value='[sqlproxy].[IOH - Qty On Hand]' />
+      <map key='[IOH - Reorder Point]' value='[sqlproxy].[IOH - Reorder Point]' />
+      <map key='[IOH - Reorder Qty]' value='[sqlproxy].[IOH - Reorder Qty]' />
+      <map key='[IOH - Report Date]' value='[sqlproxy].[IOH - Report Date]' />
+      <map key='[IOH - Unit]' value='[sqlproxy].[IOH - Unit]' />
+      <map key='[IOH - Utilization Type]' value='[sqlproxy].[IOH - Utilization Type]' />
+      <map key='[Lead Time (Days)]' value='[sqlproxy].[Lead Time (Days)]' />
+      <map key='[No CS004 Min Set]' value='[sqlproxy].[No CS004 Min Set]' />
+      <map key='[Part in a Central Store]' value='[sqlproxy].[Part in a Central Store]' />
+      <map key='[Query Date-1]' value='[sqlproxy].[Query Date-1]' />
+      <map key='[Query Date]' value='[sqlproxy].[Query Date]' />
+      <map key='[SW Avg Reorder Point]' value='[sqlproxy].[SW Avg Reorder Point]' />
+      <map key='[SW LTM Demand Qty]' value='[sqlproxy].[SW LTM Demand Qty]' />
+      <map key='[SW LTM Demand Value]' value='[sqlproxy].[SW LTM Demand Value]' />
+      <map key='[SW Qty OH (Rail+Bus+CS)]' value='[sqlproxy].[SW Qty OH (Rail+Bus+CS)]' />
+      <map key='[SW Qty OH]' value='[sqlproxy].[SW Qty OH]' />
+      <map key='[SW Value OH (Rail+Bus+CS)]' value='[sqlproxy].[SW Value OH (Rail+Bus+CS)]' />
+      <map key='[SW Value OH]' value='[sqlproxy].[SW Value OH]' />
+      <map key='[Transport Category]' value='[sqlproxy].[Transport Category]' />
+      <map key='[Transport Class]' value='[sqlproxy].[Transport Class]' />
+      <map key='[Transport Segment]' value='[sqlproxy].[Transport Segment]' />
+    </cols>
+  </connection>
+  <aliases enabled='yes' />
+  <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+</datasource>
+]]>&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;<![CDATA[<dialect-definition>
+  <primary-dialect class='hyper' version='0.0.0'>
+  </primary-dialect>
+  <overlay-dialect-set>
+    <overlay-dialect class='vizengine' version='0.1.0'>
+    </overlay-dialect>
+  </overlay-dialect-set>
+</dialect-definition>
+]]>&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>false</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Avg Base Reorder Point]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[CS04 Current Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[CS04 Do Not Replenish Rule]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[CS04 Max Qty]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[CS04 No Repl Flag]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[CS04 Reorder Point]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[CS04 Reorder Qty]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Central Store Category]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Central Store Reorder Point (Highest)]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Central Store Reorder Point (Lowest)]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Central Store Reorder Point]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[DOH / Lead Time Ratio]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[DOH Duration]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[DOH Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Global Days on Hand]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[IOH - Base Unit Count]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Cost Element]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Current Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Family Short Descr-1]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Family Short Descr]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Group Short Descr-1]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Group Short Descr]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Item Family ID-1]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Item Family ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Item Family]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Item Group ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - FMIS Item Group]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Item Descr]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Item ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[IOH - LTM Demand Qty]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[IOH - LTM Demand Value]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[IOH - Max Qty]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - No Repl Flag]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[IOH - On Hand Value]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[IOH - Qty On Hand]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[IOH - Reorder Point]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[IOH - Reorder Qty]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[IOH - Report Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Unit]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Utilization Type]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[Lead Time (Days)]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='boolean' default-type='nominal' layered='true' name='[No CS004 Min Set]' pivot='key' role='dimension' type='nominal' user-datatype='boolean' visual-totals='Default' />
+      <column aggregation='Count' datatype='boolean' default-type='nominal' layered='true' name='[Part in a Central Store]' pivot='key' role='dimension' type='nominal' user-datatype='boolean' visual-totals='Default' />
+      <column aggregation='Year' datatype='datetime' default-type='ordinal' layered='true' name='[Query Date-1]' pivot='key' role='dimension' type='ordinal' user-datatype='datetime' visual-totals='Default' />
+      <column aggregation='Year' datatype='datetime' default-type='ordinal' layered='true' name='[Query Date]' pivot='key' role='dimension' type='ordinal' user-datatype='datetime' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[SW Avg Reorder Point]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[SW LTM Demand Qty]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[SW LTM Demand Value]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[SW Qty OH (Rail+Bus+CS)]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[SW Qty OH]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[SW Value OH (Rail+Bus+CS)]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[SW Value OH]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Transport Category]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Transport Class]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Transport Segment]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Historical Item Usage' inline='true' name='sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb' version='18.1'>
+      <repository-location id='HistoricalItemUsage' path='/datasources' revision='1.0' />
+      <connection channel='https' class='sqlproxy' dbname='HistoricalItemUsage' directory='/dataserver' port='443' server='awdata.mbta.com' username=''>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <metadata-records>
+          <metadata-record class='measure'>
+            <remote-name>TXN - Incoming Qty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TXN - Incoming Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>TXN - Incoming Qty</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TXN - Item ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TXN - Item ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>TXN - Item ID</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>TXN - Outgoing Qty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TXN - Outgoing Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>TXN - Outgoing Qty</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>TXN - Overall Qty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TXN - Overall Qty]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>TXN - Overall Qty</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TXN - Transaction Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[TXN - Transaction Date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>TXN - Transaction Date</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <family>Extract</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Migrated Data]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_IGNORE_HINT_CHECK_NOT_NULL'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORT_ANALYTIC_FUNCTIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource :source-version='18.1' formatted-name='Historical Item Usage' inline='true' version='18.1' xml:base='https://awdata.mbta.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='HistoricalItemUsage' path='/datasources' revision='1.0' />
+  <connection channel='https' class='sqlproxy' dbname='HistoricalItemUsage' directory='/dataserver' port='443' server='awdata.mbta.com'>
+    <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <cols>
+      <map key='[TXN - Incoming Qty]' value='[sqlproxy].[TXN - Incoming Qty]' />
+      <map key='[TXN - Item ID]' value='[sqlproxy].[TXN - Item ID]' />
+      <map key='[TXN - Outgoing Qty]' value='[sqlproxy].[TXN - Outgoing Qty]' />
+      <map key='[TXN - Overall Qty]' value='[sqlproxy].[TXN - Overall Qty]' />
+      <map key='[TXN - Transaction Date]' value='[sqlproxy].[TXN - Transaction Date]' />
+    </cols>
+  </connection>
+  <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' show-structure='true' />
+</datasource>
+]]>&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;<![CDATA[<dialect-definition>
+  <primary-dialect class='hyper' version='0.0.0'>
+  </primary-dialect>
+  <overlay-dialect-set>
+    <overlay-dialect class='vizengine' version='0.1.0'>
+    </overlay-dialect>
+  </overlay-dialect-set>
+</dialect-definition>
+]]>&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>false</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column caption='Max Qty' datatype='integer' name='[Calculation_1900237619033755648]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[CS04 Max Qty])' />
+      </column>
+      <column caption='Min Qty' datatype='integer' name='[Calculation_1900237619033825281]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[CS04 Reorder Point])' />
+      </column>
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[TXN - Incoming Qty]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[TXN - Item ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[TXN - Outgoing Qty]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[TXN - Overall Qty]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[TXN - Transaction Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <_.fcp.ObjectModelTableType.true...column caption='Migrated Data' datatype='table' name='[__tableau_internal_object_id__].[Migrated Data]' role='measure' type='quantitative' />
+      <column-instance column='[TXN - Overall Qty]' derivation='Sum' name='[sum:TXN - Overall Qty:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1900237619033755648]' derivation='User' name='[usr:Calculation_1900237619033755648:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1900237619033825281]' derivation='User' name='[usr:Calculation_1900237619033825281:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[sum:TXN - Overall Qty:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[usr:Calculation_1900237619033755648:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[usr:Calculation_1900237619033825281:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8'>
+        <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[CS04 Max Qty]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+        <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[CS04 Reorder Point]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Migrated Data' id='Migrated Data'>
+            <properties context=''>
+              <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb'>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[TXN - Item ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column-instance column='[TXN - Item ID]' derivation='None' name='[none:TXN - Item ID:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8'>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Item ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column-instance column='[IOH - Item ID]' derivation='None' name='[none:IOH - Item ID:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb' target='sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8'>
+      <column-mapping>
+        <map key='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Item ID:nk]' value='[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[none:IOH - Item ID:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Historical Usage For Item #&lt;</run>
+            <run>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Item ID:nk]</run>
+            <run>&gt;: &lt;</run>
+            <run>[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[none:IOH - Item Descr:nk]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Historical Item Usage' name='sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb' />
+            <datasource caption='Inventory by Base' name='sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb'>
+            <column caption='Max Qty' datatype='integer' name='[Calculation_1900237619033755648]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[CS04 Max Qty])' />
+            </column>
+            <column caption='Min Qty' datatype='integer' name='[Calculation_1900237619033825281]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[CS04 Reorder Point])' />
+            </column>
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[TXN - Item ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' datatype='real' default-type='quantitative' layered='true' name='[TXN - Overall Qty]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+            <column aggregation='Year' datatype='date' default-type='ordinal' layered='true' name='[TXN - Transaction Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+            <column-instance column='[TXN - Item ID]' derivation='None' name='[none:TXN - Item ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TXN - Transaction Date]' derivation='None' name='[none:TXN - Transaction Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TXN - Overall Qty]' derivation='Sum' name='[sum:TXN - Overall Qty:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1900237619033755648]' derivation='User' name='[usr:Calculation_1900237619033755648:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1900237619033825281]' derivation='User' name='[usr:Calculation_1900237619033825281:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8'>
+            <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[CS04 Max Qty]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[CS04 Reorder Point]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Item Descr]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Item ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[IOH - Unit]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[IOH - Item Descr]' derivation='None' name='[none:IOH - Item Descr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IOH - Unit]' derivation='None' name='[none:IOH - Unit:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[usr:Calculation_1900237619033755648:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[usr:Calculation_1900237619033825281:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[sum:TXN - Overall Qty:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Item ID:nk]'>
+            <groupfilter function='member' level='[none:TXN - Item ID:nk]' member='&quot;02008243&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Transaction Date:qk]' included-values='in-range' />
+          <filter class='categorical' column='[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[none:IOH - Unit:nk]'>
+            <groupfilter function='member' level='[none:IOH - Unit:nk]' member='&quot;CS004&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Item ID:nk]</column>
+            <column>[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[none:IOH - Unit:nk]</column>
+            <column>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Transaction Date:qk]</column>
+            <column>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Transaction Date:qk]' scope='cols' value='Date' />
+            <format attr='title' class='0' field='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[Multiple Values]' scope='rows' value='SW Qty On Hand' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[:Measure Names]' />
+              <lod column='[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[none:IOH - Item Descr:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[Multiple Values]</rows>
+        <cols>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Transaction Date:qk]</cols>
+        <join-lod-include-overrides>
+          <column>[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[IOH - Item ID]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{1949A882-00CE-4D2D-A5D3-EC28D678BD95}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='102'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Transaction Date:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='dropdown' param='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Item ID:nk]' type='filter' />
+            <card pane-specification-id='0' param='[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[:Measure Names]</field>
+            <field>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Item ID:nk]</field>
+            <field>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[none:TXN - Transaction Date:qk]</field>
+            <field>[sqlproxy.0jnisxk0lipyrx17aln7y0y93gwb].[yr:TXN - Transaction Date:ok]</field>
+            <field>[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[none:IOH - Item Descr:nk]</field>
+            <field>[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[none:IOH - Item ID:nk]</field>
+            <field>[sqlproxy.0uxpqfu0zgdqmg0zkgm7k0vazsx8].[none:IOH - Unit:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0135BCD2-8241-4D69-8F70-09111E897DD4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
