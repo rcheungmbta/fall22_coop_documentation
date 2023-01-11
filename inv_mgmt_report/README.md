@@ -5,9 +5,8 @@ The initial goal of this work was for the automation of the monthly inventory re
 
 The code is based on the transaction data formula, using transaction codes. 
 This is the formula: 
-> Qty Offset on total transaction = End  Qty - Start Qty = 041 + 022 + 024 - 031 + 050 - (051 + 054) + 010 + 020 - 030 - 012--
+> Qty Offset on total transaction = End  Qty - Start Qty = 041 + 022 + 024 - 031 + 050 - (051 + 054) + 010 + 020 - 030 - 012
 
-![transaction code image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/ac2fafe1-2763-4f22-9b19-8c26ca4da4c3/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20221117%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20221117T182508Z&X-Amz-Expires=86400&X-Amz-Signature=a183d81d81d8fde620e5a2468bdfb46c0ae3d9b3c43edccba78413cfe32fc962&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
 
 ---
 ### Issues
